@@ -1,1 +1,2 @@
-"# My-First-Project" 
+## My first project 
+it was an e-commerce website built entirely with HTML, CSS, and JavaScript. The website featured a variety of functions, including a slider for product images, a category filter to sort products by type, a validation system to ensure that users entered valid information into forms, and a scroll-to-top button to improve user experience. The project required a lot of planning and attention to detail, as I had to ensure that all the different functions worked together seamlessly. Overall, it was a great learning experience, and I gained a lot of valuable skills in web development 
