@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+<!----------------------HEADER----------------------->
+    <header>
+        <nav>
+          <a href="#" class="logo" >My Site</a>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#prod">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="cart"><p id="counter">0</p><i class="fa-solid fa-cart-shopping"></i></li>
+
+          </ul>
+        </nav>
+      </header>
+<!-----------------------MAIN---------------------------------->
+      <main>
+<!-----------------------INTRO------------------------------->
+        <div class="container" id="top">
+          <img src="homePage.jpg" alt="">
+          <p id="openTxt"></p>
+        </div>
+        <div class="centeredTxt">
+          <h1 class="midTxt">Take a tour in our site and check our products</h1>
+        </div>
+<!-----------------------SLIDER---------------------------------->
+        <div class="slider-container">
+            <div class="slider"><img src="1.jpg" alt=""></div>
+            <div class="button-container">
+                <button id="previous-button"><i class="fa-solid fa-caret-left"></i></button>
+                <button id="next-button"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
+<!------------------CATEGORY FILTER----------------------------->
+        <div class="centeredTxt">
+          <h1 class="midTxt">Take a look at our products</h1>
+        </div>
+        <div class="categ-filter">
+          <div class="filter">
+            <button onclick="showAll()">All</button>
+            <button onclick="showLaptop()">LAPTOPS</button>
+            <button onclick="showPhone()">PHONES</button>
+            <button onclick="showTablet()">TABLETS</button>
+          </div>
+          <div class="category" id="prod">
+            <section id="laptops">
+              <div>
+                <img src="products/laptop1 (1).jpg" alt="">
+                <p>ASUS TUF Gaming F15 Gaming Laptop, 15.6” 144Hz FHD Display, Intel Core i5-11400H Processor, GeForce RTX 2050, 8GB DDR4 RAM, 512GB PCIe SSD Gen 3, Wi-Fi 6, Windows 11, FX506HF-ES51</p>
+                <h4>$699.99</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/laptop2 (1).jpg" alt="">
+                <p>Acer Nitro 5 AN515-57-79TD Gaming Laptop | Intel Core i7-11800H | NVIDIA GeForce RTX 3050 Ti Laptop GPU | 15.6" FHD 144Hz IPS Display | 8GB DDR4 | 512GB NVMe SSD | Killer Wi-Fi 6 </p>
+                <h4>$739.99</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/laptop3.jpg" alt="">
+                <p>Lenovo IdeaPad 15.6" Laptop Newest, 20GB RAM, 1TB SSD, AMD Dual-core Processor, 15.6 Inch HD Anti-Glare Display, WiFi6 Bluetooth 5.0, 9.5Hr Battery, Windows 11 +GM Accessories</p>
+                <h4>$399.00</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+            </section>
+            <section id="phones">
+              <div>
+                <img src="products/phone1.jpg" alt="">
+                <p>SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen</p>
+                <h4>$349.00</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/phone2.jpg" alt="">
+                <p>Apple iPhone SE 2nd Generation, US Version, 64GB, Black - Unlocked (Renewed)</p>
+                <h4>$154.99</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/phone3.jpg" alt="">
+                <p>Samsung Galaxy S20 FE 5G, 128GB, Cloud Navy - Unlocked (Renewed)</p>
+                <h4>$209.99</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+            </section>
+            <section id="tablets">
+              <div>
+                <img src="products/tablet1.jpg" alt="">
+                <p>Apple 2022 12.9-inch iPad Pro (Wi-Fi, 256GB) - Space Gray (6th Generation)</p>
+                <h4>$1,057.08</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/tablet2.jpg" alt="">
+                <p>Apple iPad (2018 Model) with Wi-Fi only 32GB Apple 9.7in iPad - Space Gray (Renewed)</p>
+                <h4>$169.00</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+              <div>
+                <img src="products/tablet3.jpg" alt="">
+                <p>SAMSUNG Galaxy Tab A8 10.5” 32GB Android Tablet w/ LCD Screen, Long Lasting Battery, Kids Content, Smart Switch.</p>
+                <h4>$179.99</h4>
+                <button onclick="counter()"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+<!----------------------------FOTTER-------------------------------------->
+      <footer style="background-color: rgb(40, 40, 68); height: 200px;" >
+        <div class="footer-content">
+          <div class="footer-content-p1">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores doloremque repellendus aut repellat consequuntur laudantium dicta reiciendis alias odit?</p>
+          </div>
+          <div class="footer-content-p2">
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="mailto:test_run@gmail.com"><i class="fa-solid fa-envelope" style="color: #53a6d0;"></i></a></li>
+              <li><a href="https://wa.me/+01111111111"><i class="fa-brands fa-whatsapp" style="color: #06ac4e;"></i></a></li>
+              <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #093fe1;"></i></a></li>
+              <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #019af9;"></i></a></li>
+              <li><a href="https://web.telegram.org"><i class="fa-brands fa-telegram" style="color: #3d6cbd;"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!---------------------SCROLL----------------->
+      <a href="#top"><button id="scroll"><i class="fa-solid fa-up-long"></i></button></a>
+
+  <script src="cookie.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
